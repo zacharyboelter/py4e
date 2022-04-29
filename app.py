@@ -111,14 +111,27 @@ is_in_inventory = True
 # print(friends.index('Terry'))
 
 
-sales_w1 = [7,3,42,19,15,35,9]
-sales_w2 = [12,4,26,10,7,28]
-sales = []
+# sales_w1 = [7,3,42,19,15,35,9]
+# sales_w2 = [12,4,26,10,7,28]
+# sales = []
 
-sales_w2.append(int(input('How many lemonades did we sell today?: ')))
-sales = sales_w1 + sales_w2
-sales_high = max(sales) * 1.5
-sales_low = min(sales) * 1.5
-sales_total = sum(sales) *1.5
+# sales_w2.append(int(input('How many lemonades did we sell today?: ')))
+# sales = sales_w1 + sales_w2
+# sales_high = max(sales) * 1.5
+# sales_low = min(sales) * 1.5
+# sales_total = sum(sales) *1.5
 
-print(f'Our best day, we made ${sales_high}. On our worst day, we only did ${sales_low} in sales. Overall, we did ${sales_total} for the 2 week period!')
+# print(f'Our best day, we made ${sales_high}. On our worst day, we only did ${sales_low} in sales. Overall, we did ${sales_total} for the 2 week period!')
+
+# csv = 'Eric,John,Michael,Terry,Graham:TerryG;Brian'
+
+
+# friends_list = (','.join(','.join(csv.split(';')).split(':'))).split(',')
+# print(friends_list)
+# print('replace', csv.replace(';',',').replace(':',',').split(','))
+
+#Tuples - faster Lists you can't change
+friends = ['John','Michael','Terry','Eric','Graham']
+friends_tuple = ('John','Michael','Terry','Eric','Graham')
+print(friends[2:4])
+print(friends_tuple[2:4])
