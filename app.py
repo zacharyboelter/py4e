@@ -3,6 +3,7 @@
 #Create appropriate Variables for Item name, the price 
 #and how many you have in stock
 
+from ast import Add
 from operator import truediv
 
 
@@ -67,7 +68,22 @@ is_in_inventory = True
 
 # ~~~~~ Capture User Input ~~~~~~~~~
 
-name = input('What is your name?: ')
-age = input(f'How old are you {name.title()}?')
+# name = input('What is your name?: ')
+# age = input(f'How old are you {name.title()}?')
 
-print(f'{name.title()} you are {age} years old? That is very old... You old bastard! lol')
+# print(f'{name.title()} you are {age} years old? That is very old... You old bastard! lol')
+
+# ~~~~~~~~~~~~~~~ CALCULATOR ~~~~~~~~~~~~~~~~~~~
+
+a = input('Enter a number: ')
+b = input('And one more number for fuck sake: ')
+add = float(a) + float(b)
+
+subtraction = float(a) - float(b)
+multiplication = float(a) * float(b)
+division_float = float(a) / float(b)
+division_floor = float(a) // float(b)
+modulus = float(a) % float(b)
+exponent = float(a) ** float(b)
+
+print(f'If you add them: {add}, or subtract: {subtraction}, but if you multiply: {multiplication}, also divide: {division_float}, or round the division: {division_floor}, remainder would be : {modulus}, then there is this big add number for the exponent: {exponent}')
