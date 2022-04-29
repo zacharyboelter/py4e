@@ -13,6 +13,12 @@ in_stock = int(100)
 is_in_inventory = True
 # print(item_name, price, in_stock, is_in_inventory)
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  MATHS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 # a=10
 # b=3
 # print('Addition : ', a + b)
@@ -52,12 +58,16 @@ is_in_inventory = True
 # print(msg1)
 
 
-#  ~~~~~~~~~~~ MEMBERSHIP ~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  FunctioMEMBERSHIPS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~# 
 # print('Python' not in msg)
 # print('Python' in msg)
 
 
-# ~~~~ Str Formatting ~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  STRING FORMATTING
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # name='TERRY'
 # color = 'RED'
@@ -99,8 +109,9 @@ is_in_inventory = True
 # print(f'So {name.capitalize()}, for every {kilos} kilometers, that is {round(miles, 1)} miles!') 
 
 
-# ~~~~~~~~~~~~~ LISTS ~~~~~~~~~~~~~~~~
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  LISTS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # friends = ['John','Michael','Terry','Eric','Graham']
 # cars = [911,130,328,535,740,308]
 
@@ -130,6 +141,12 @@ is_in_inventory = True
 # print(friends_list)
 # print('replace', csv.replace(';',',').replace(':',',').split(','))
 
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  TUPLES
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 #Tuples - faster Lists you can't change
 # friends = ['John','Michael','Terry','Eric','Graham']
 # friends_tuple = ('John','Michael','Terry','Eric','Graham')
@@ -154,6 +171,10 @@ is_in_inventory = True
 # empty_set = {} # this is wrong, this is a dictionary
 # empty_set = set()
 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  SETS
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #1. Check if ‘Eric’ and ‘John’ exist in friends
 #2. combine or add the two sets 
 #3. Find names that are in both sets
@@ -161,27 +182,36 @@ is_in_inventory = True
 #5. Show only the names who only appear in one of the lists
 #6. Create a new cars-list without duplicates
 
-friends = {'John','Michael','Terry','Eric','Graham'}
-my_friends = {'Reg','Loretta','Colin','John','Graham'}
-cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+# friends = {'John','Michael','Terry','Eric','Graham'}
+# my_friends = {'Reg','Loretta','Colin','John','Graham'}
+# cars =['900','420','V70','911','996','V90','911','911','S','328','900']
 
-print('Eric' in friends and 'John' in friends)
-
-
-print(my_friends.union(friends))
-print(my_friends | friends)
+# print('Eric' in friends and 'John' in friends)
 
 
-print(friends.intersection(my_friends))
-print(friends & my_friends)
+# print(my_friends.union(friends))
+# print(my_friends | friends)
 
 
-print(friends.difference(my_friends))
-print(friends - my_friends)
+# print(friends.intersection(my_friends))
+# print(friends & my_friends)
 
-print(my_friends.symmetric_difference(friends))
-print(my_friends ^ friends)
 
-cars_no_dupl = set(cars)
-print(cars_no_dupl)
+# print(friends.difference(my_friends))
+# print(friends - my_friends)
 
+# print(my_friends.symmetric_difference(friends))
+# print(my_friends ^ friends)
+
+# cars_no_dupl = set(cars)
+# print(cars_no_dupl)
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Functions
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+def greeting():
+    print('Hello World')
+
+greeting()
