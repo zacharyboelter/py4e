@@ -211,7 +211,22 @@ is_in_inventory = True
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def greeting():
-    print('Hello World')
+# def greeting(name):
+#     print(f'Hello {name}, you old bastard.')
 
-greeting()
+
+# name = input('Whats your dumb name?: ')
+# greeting(name)
+
+
+def value_added_tax(amount):
+    tax = amount * 0.25
+    total_amount = amount * 1.25
+    return f"{amount}, {tax}, {total_amount}"
+    # ^^ string ^^
+    # or {amount, tax, total_amount} ~~ set
+    # or (amount, tax, total_amount) ~~ tuple
+    # or [amount, tax, total_amount] ~~ list
+    
+price = value_added_tax(100)    
+print(price, type(price))
