@@ -24,9 +24,16 @@ is_in_inventory = True
 
 msg='welcome to Python 101: Strings'
 print(msg)
-print(len(msg))
-print(msg.count('o'))
-print(msg.upper())
-print(msg.lower())
-print(msg.title())
-print(msg.capitalize())
+# print(len(msg))
+# print(msg.count('o'))
+# print(msg.upper())
+# print(msg.lower())
+# print(msg.title())
+# print(msg.capitalize())
+
+print(msg[0:17])
+
+msg='welcome to Python 101: Strings'
+msg1=msg[18]+' '+msg[:8] + ' '+ msg[-5:-1] + ' ' + msg[8:10] + ' ' + 'Tyler'
+print(msg1.title())
+print(msg1.title()[::-1])
