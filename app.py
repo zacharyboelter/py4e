@@ -3,14 +3,14 @@
 #Create appropriate Variables for Item name, the price 
 #and how many you have in stock
 
-from ast import Add
-from operator import truediv
+# from ast import Add
+# from operator import truediv
 
 
-item_name = str('widget')
-price = float(1.89)
-in_stock = int(100)
-is_in_inventory = True
+# item_name = str('widget')
+# price = float(1.89)
+# in_stock = int(100)
+# is_in_inventory = True
 # print(item_name, price, in_stock, is_in_inventory)
 
 
@@ -219,14 +219,43 @@ is_in_inventory = True
 # greeting(name)
 
 
-def value_added_tax(amount):
-    tax = amount * 0.25
-    total_amount = amount * 1.25
-    return f"{amount}, {tax}, {total_amount}"
+# def value_added_tax(amount):
+#     tax = amount * 0.25
+#     total_amount = amount * 1.25
+#     return f"{amount}, {tax}, {total_amount}"
     # ^^ string ^^
     # or {amount, tax, total_amount} ~~ set
     # or (amount, tax, total_amount) ~~ tuple
     # or [amount, tax, total_amount] ~~ list
     
-price = value_added_tax(100)    
-print(price, type(price))
+# price = value_added_tax(100)    
+# print(price, type(price))
+
+
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Comparisons
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# a = [3,7,42]
+# b = [3,7,42]
+# b = a proves true and true. They occupy the same memory in cpu
+# print(a == b)
+# print(a is b)
+# print(id(a), id(b))
+
+
+a=7
+b=3
+print('a == b is', a == b)
+print('a != b is', a != b)
+print('a > b is', a > b)
+print('a < b is', a < b)
+print('a >= b is', a >= b)
+print('a <= b is', a <= b)
+print('o in John is ','o' in 'John') #membership
+print('o in John is ','o' not in 'John') #non membership
+print('John is John ','John' is 'John') #identity
+print('John is not John is ','John' is not 'John') # negative identity
