@@ -75,15 +75,25 @@ is_in_inventory = True
 
 # ~~~~~~~~~~~~~~~ CALCULATOR ~~~~~~~~~~~~~~~~~~~
 
-a = input('Enter a number: ')
-b = input('And one more number for fuck sake: ')
-add = float(a) + float(b)
+# a = input('Enter a number: ')
+# b = input('And one more number for fuck sake: ')
+# add = float(a) + float(b)
 
-subtraction = float(a) - float(b)
-multiplication = float(a) * float(b)
-division_float = float(a) / float(b)
-division_floor = float(a) // float(b)
-modulus = float(a) % float(b)
-exponent = float(a) ** float(b)
+# subtraction = float(a) - float(b)
+# multiplication = float(a) * float(b)
+# division_float = float(a) / float(b)
+# division_floor = float(a) // float(b)
+# modulus = float(a) % float(b)
+# exponent = float(a) ** float(b)
 
-print(f'If you add them: {add}, or subtract: {subtraction}, but if you multiply: {multiplication}, also divide: {division_float}, or round the division: {division_floor}, remainder would be : {modulus}, then there is this big add number for the exponent: {exponent}')
+# print(f'If you add them: {add}, or subtract: {subtraction}, but if you multiply: {multiplication}, also divide: {division_float}, or round the division: {division_floor}, remainder would be : {modulus}, then there is this big add number for the exponent: {exponent}')
+
+
+#  ~~~~~Convert K's to Miles ~~~~~~~~
+
+name = input('Hey, what is your name? ')
+kilos = input('Give me a number to convert from k to miles?: ')
+
+miles = float(kilos) * 0.6214
+
+print(f'So {name.capitalize()}, for every {kilos} kilometers, that is {int(miles)} miles!') 
