@@ -22,8 +22,8 @@ is_in_inventory = True
 # print('Modulus : ', a % b)
 # print('Exponent : ', a ** b)
 
-msg='welcome to Python 101: Strings'
-print(msg)
+# msg='welcome to Python 101: Strings'
+# print(msg)
 # print(len(msg))
 # print(msg.count('o'))
 # print(msg.upper())
@@ -31,9 +31,21 @@ print(msg)
 # print(msg.title())
 # print(msg.capitalize())
 
-print(msg[0:17])
+# print(msg[0:17])
 
 msg='welcome to Python 101: Strings'
-msg1=msg[18]+' '+msg[:8] + ' '+ msg[-5:-1] + ' ' + msg[8:10] + ' ' + 'Tyler'
-print(msg1.title())
-print(msg1.title()[::-1])
+# msg1=msg[18]+' '+msg[:8] + ' '+ msg[-5:-1] + ' ' + msg[8:10] + ' ' + 'Tyler'
+# print(msg1.title())
+# print(msg1.title()[::-1])
+
+# msg="""Dear Terry,
+# You must cut down the mightiest 
+# tree in the forest with…
+# a herring! <3"""
+# print(msg)
+
+print(msg.find('Python'))
+# immutable, need to save to new var
+print(msg.replace('Python', 'Rust'))
+msg1 = msg.replace('Python', 'Golang')
+print(msg1)
