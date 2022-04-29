@@ -33,7 +33,7 @@ is_in_inventory = True
 
 # print(msg[0:17])
 
-msg='welcome to Python 101: Strings'
+# msg='welcome to Python 101: Strings'
 # msg1=msg[18]+' '+msg[:8] + ' '+ msg[-5:-1] + ' ' + msg[8:10] + ' ' + 'Tyler'
 # print(msg1.title())
 # print(msg1.title()[::-1])
@@ -44,8 +44,26 @@ msg='welcome to Python 101: Strings'
 # a herring! <3"""
 # print(msg)
 
-print(msg.find('Python'))
+# print(msg.find('Python'))
 # immutable, need to save to new var
-print(msg.replace('Python', 'Rust'))
-msg1 = msg.replace('Python', 'Golang')
-print(msg1)
+# print(msg.replace('Python', 'Rust'))
+# msg1 = msg.replace('Python', 'Golang')
+# print(msg1)
+
+
+#  ~~~~~~~~~~~ MEMBERSHIP ~~~~~~~~~~~~~~~
+# print('Python' not in msg)
+# print('Python' in msg)
+
+
+# ~~~~ Str Formatting ~~~~~
+
+# name='TERRY'
+# color = 'RED'
+# msg = '[' + name + '] loves the color ' + color + '!'
+# msg1 = f'[{name.capitalize()}] loves the color {color}!'
+
+# print(msg, msg1)
+
+# ~~~~~ Capture User Input ~~~~~~~~~
+
