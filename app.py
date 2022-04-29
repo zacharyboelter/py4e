@@ -67,3 +67,7 @@ is_in_inventory = True
 
 # ~~~~~ Capture User Input ~~~~~~~~~
 
+name = input('What is your name?: ')
+age = input(f'How old are you {name.title()}?')
+
+print(f'{name.title()} you are {age} years old? That is very old... You old bastard! lol')
