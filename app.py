@@ -263,21 +263,50 @@
 # Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
 # formula is: temp in C*9/5 + 32 = temp in f
 
-mode = input('Enter maths operation(+, -, /, *, convert): ')
-num1 = float(input('Enter your first number: '))
-if mode.lower() == 'convert':
-    print(f'{num1}Cº is {(num1 * 1.8) + 32}Fº after converting!') 
-else: 
-    num2 = float(input('Enter your second number: '))
+# mode = input('Enter maths operation(+, -, /, *, convert): ')
+# num1 = float(input('Enter your first number: '))
+# if mode.lower() == 'convert':
+#     print(f'{num1}Cº is {(num1 * 1.8) + 32}Fº after converting!') 
+# else: 
+#     num2 = float(input('Enter your second number: '))
 
-    if mode == '+':
-        print(f'The answer is: {num1 + num2}')
-    elif mode == '-':
-        print(f'The answer is: {num1 - num2}')
-    elif mode == '/':
-        print(f'The answer is: {num1 / num2}')
-    elif mode == '*':
-        print(f'The answer is: {num1 * num2}')
+#     if mode == '+':
+#         print(f'The answer is: {num1 + num2}')
+#     elif mode == '-':
+#         print(f'The answer is: {num1 - num2}')
+#     elif mode == '/':
+#         print(f'The answer is: {num1 / num2}')
+#     elif mode == '*':
+#         print(f'The answer is: {num1 * num2}')
     
-    else:
-        print('Something is wrong, go fuck yaself.')
+#     else:
+#         print('Something is wrong, go fuck yaself.')
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  LOOPS - while loop
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+# i = 0
+
+# while i < 5:
+#     i+=1
+#     # multiply the stars by 'i' and they will add on each iteration. Then concat everything for formatting. 
+#     print(f' {i}. ' + '*' * i  + 'Loops are dope' +  '*' * i)
+   
+   
+# Three Loop Questions:
+#1. What do I want to repeat?
+#  -> 
+#2. What do I want to change each time?
+#  -> 
+#3. How long should we repeat?
+#  -> 
+
+i = 0
+
+while i < 10:
+    i += 1
+    print(f'~' * i + 'D' * i + 'O' * i  + 'P' * i + 'E' * i + '~' * i)
