@@ -358,17 +358,17 @@
 #  LOOPS - for loop
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-names = ['john ClEEse','Eric IDLE','michael']
-names1 = ['graHam chapman', 'TERRY', 'terry jones']
+# names = ['john ClEEse','Eric IDLE','michael']
+# names1 = ['graHam chapman', 'TERRY', 'terry jones']
 
-new_name = input('Enter a person to invite to the party! ')
-new_name1 = input('Enter another person to invite to the party! ')
-names.append(new_name)
-names1.append(new_name1)
-names.extend(names1)
+# new_name = input('Enter a person to invite to the party! ')
+# new_name1 = input('Enter another person to invite to the party! ')
+# names.append(new_name)
+# names1.append(new_name1)
+# names.extend(names1)
 
-for name in names:
-    print(f'{name.title()}! You are invited to the party on Saturday!')
+# for name in names:
+#     print(f'{name.title()}! You are invited to the party on Saturday!')
 
 
 
@@ -402,12 +402,50 @@ for name in names:
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # super similar to js objects
 
-movie = {
-    'title' : 'Life of Brian',
-    'year' : 1979,
-    'cast' : ['John','Eric','Michael','George','Terry']
-}
-for key, value in movie.items():
-    print(key, value)
+# movie = {
+#     'title' : 'Life of Brian',
+#     'year' : 1979,
+#     'cast' : ['John','Eric','Michael','George','Terry']
+# }
+# for key, value in movie.items():
+#     print(key, value)
 
 
+
+
+python = {'John':35,'Eric':36,'Michael':35,'Terry':38,'Graham':37,'TerryG':34}
+holy_grail = {'Arthur':40,'Galahad':35,'Lancelot':39,'Knight of NI':40, 'Zoot':17}
+life_of_brian = {'Brian':33,'Reg':35,'Stan/Loretta':32,'Biccus Diccus':45}
+#membership test
+# print('Arthur' in holy_grail)
+# if 'Arthur' not in python:
+#     print('He\'s not here!')
+
+people = {}
+people1 = {}
+people2 = {}
+
+#method 1 update
+#best used if you have only 2 dictionaries to merge
+
+
+people.update(python)
+people.update(holy_grail)
+people.update(life_of_brian)
+print(people)
+
+#method 2 comprhension 
+#best used if you have older version and need to merge more than 2 dictionaries
+
+
+for groups in (python, holy_grail, life_of_brian) : people1.update(groups)
+print(f'This is the comprehension method: {people1}')
+
+#method 3 unpacking 3.5 or later only!!
+#best used if you have recent version and need to merge more than 2 dictionaries
+
+people2 = {**python, **holy_grail, **life_of_brian}
+print(f' This is the unpacking version: {people2}')
+
+#sum of the ages of all the actors ages combined
+print('The sum of the ages is: ', sum(people.values()))
