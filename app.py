@@ -265,17 +265,19 @@
 
 mode = input('Enter maths operation(+, -, /, *, convert): ')
 num1 = float(input('Enter your first number: '))
-num2 = float(input('Enter your second number: '))
+if mode.lower() == 'convert':
+    print(f'{num1}Cº is {(num1 * 1.8) + 32}Fº after converting!') 
+else: 
+    num2 = float(input('Enter your second number: '))
 
-if mode == '+':
-    print(f'{num1 + num2}')
-elif mode == '-':
-    print(f'{num1 - num2}')
-elif mode == '/':
-    print(f'{num1 / num2}')
-elif mode == '*':
-    print(f'{num1 * num2}')
-elif mode == 'convert':
-    print(f'{(num1 * 1.8) + 32}')    
-else:
-    print('Something is wrong, go fuck yaself.')
+    if mode == '+':
+        print(f'The answer is: {num1 + num2}')
+    elif mode == '-':
+        print(f'The answer is: {num1 - num2}')
+    elif mode == '/':
+        print(f'The answer is: {num1 / num2}')
+    elif mode == '*':
+        print(f'The answer is: {num1 * num2}')
+    
+    else:
+        print('Something is wrong, go fuck yaself.')
