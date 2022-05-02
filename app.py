@@ -326,28 +326,46 @@
 # 3. How long should we repeat?
 #  ->
 
-import random
-rand_num = random.randint(1, 100)
-print(rand_num)
+# import random
+# rand_num = random.randint(1, 100)
+# print(rand_num)
 
-guesses = 0
+# guesses = 0
 
-user_guess = int(input('You have 5 tries. Guess a number from 1 to 100: '))
+# user_guess = int(input('You have 5 tries. Guess a number from 1 to 100: '))
 
 
-while guesses < 5:
+# while guesses < 5:
 
-    guesses += 1
+#     guesses += 1
 
-    if user_guess == rand_num:
-        print(f'You got it! {user_guess} is correct!')
-        break
+#     if user_guess == rand_num:
+#         print(f'You got it! {user_guess} is correct!')
+#         break
 
-    elif user_guess < rand_num:
-        user_guess = int(input(f'{user_guess} is too low, guess higher: '))
+#     elif user_guess < rand_num:
+#         user_guess = int(input(f'{user_guess} is too low, guess higher: '))
 
-    elif user_guess > rand_num:
-        user_guess = int(input(f'{user_guess} is too high, guess lower: '))
+#     elif user_guess > rand_num:
+#         user_guess = int(input(f'{user_guess} is too high, guess lower: '))
 
-if user_guess != rand_num:
-    print(f'Ran out of turns, the correct number was {rand_num}')
+# if user_guess != rand_num:
+#     print(f'Ran out of turns, the correct number was {rand_num}')
+
+
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  LOOPS - for loop
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+names = ['john ClEEse','Eric IDLE','michael']
+names1 = ['graHam chapman', 'TERRY', 'terry jones']
+
+new_name = input('Enter a person to invite to the party! ')
+new_name1 = input('Enter another person to invite to the party! ')
+names.append(new_name)
+names1.append(new_name1)
+names.extend(names1)
+
+for name in names:
+    print(f'{name.title()}! You are invited to the party on Saturday!')
