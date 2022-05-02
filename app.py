@@ -1,7 +1,7 @@
 # print('Hello World')
 
-#Create appropriate Variables for Item name, the price 
-#and how many you have in stock
+# Create appropriate Variables for Item name, the price
+# and how many you have in stock
 
 # from ast import Add
 # from operator import truediv
@@ -46,7 +46,7 @@
 # print(msg1.title()[::-1])
 
 # msg="""Dear Terry,
-# You must cut down the mightiest 
+# You must cut down the mightiest
 # tree in the forest with…
 # a herring! <3"""
 # print(msg)
@@ -60,7 +60,7 @@
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  FunctioMEMBERSHIPS
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~# 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # print('Python' not in msg)
 # print('Python' in msg)
 
@@ -106,7 +106,7 @@
 
 # miles = float(kilos) * 0.6214
 
-# print(f'So {name.capitalize()}, for every {kilos} kilometers, that is {round(miles, 1)} miles!') 
+# print(f'So {name.capitalize()}, for every {kilos} kilometers, that is {round(miles, 1)} miles!')
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +147,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-#Tuples - faster Lists you can't change
+# Tuples - faster Lists you can't change
 # friends = ['John','Michael','Terry','Eric','Graham']
 # friends_tuple = ('John','Michael','Terry','Eric','Graham')
 # friends_set = {'John','Michael','Terry','Eric','Graham','Eric'}
@@ -158,7 +158,7 @@
 # print(friends_set.union(my_friends_set))
 
 
-# #Sets - blazingly fast unordered Lists 
+# #Sets - blazingly fast unordered Lists
 # #empty Lists
 # empty_list = []
 # empyt_list = list()
@@ -175,12 +175,12 @@
 #  SETS
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#1. Check if ‘Eric’ and ‘John’ exist in friends
-#2. combine or add the two sets 
-#3. Find names that are in both sets
-#4. find names that are only in friends
-#5. Show only the names who only appear in one of the lists
-#6. Create a new cars-list without duplicates
+# 1. Check if ‘Eric’ and ‘John’ exist in friends
+# 2. combine or add the two sets
+# 3. Find names that are in both sets
+# 4. find names that are only in friends
+# 5. Show only the names who only appear in one of the lists
+# 6. Create a new cars-list without duplicates
 
 # friends = {'John','Michael','Terry','Eric','Graham'}
 # my_friends = {'Reg','Loretta','Colin','John','Graham'}
@@ -223,16 +223,13 @@
 #     tax = amount * 0.25
 #     total_amount = amount * 1.25
 #     return f"{amount}, {tax}, {total_amount}"
-    # ^^ string ^^
-    # or {amount, tax, total_amount} ~~ set
-    # or (amount, tax, total_amount) ~~ tuple
-    # or [amount, tax, total_amount] ~~ list
-    
-# price = value_added_tax(100)    
+# ^^ string ^^
+# or {amount, tax, total_amount} ~~ set
+# or (amount, tax, total_amount) ~~ tuple
+# or [amount, tax, total_amount] ~~ list
+
+# price = value_added_tax(100)
 # print(price, type(price))
-
-
-
 
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -247,16 +244,38 @@
 # print(id(a), id(b))
 
 
-a=7
-b=3
-print('a == b is', a == b)
-print('a != b is', a != b)
-print('a > b is', a > b)
-print('a < b is', a < b)
-print('a >= b is', a >= b)
-print('a <= b is', a <= b)
-print('o in John is ','o' in 'John') #membership
-print('o in John is ','o' not in 'John') #non membership
-print('John is John ','John' is 'John') #identity
-print('John is not John is ','John' is not 'John') # negative identity
+# a=7
+# b=3
+# print('a == b is', a == b)
+# print('a != b is', a != b)
+# print('a > b is', a > b)
+# print('a < b is', a < b)
+# print('a >= b is', a >= b)
+# print('a <= b is', a <= b)
+# print('o in John is ','o' in 'John') #membership
+# print('o in John is ','o' not in 'John') #non membership
+# print('John is John ','John' is 'John') #identity
+# print('John is not John is ','John' is not 'John') # negative identity
 
+
+# Create a calculator which handles +,-,*,/ and outputs answer based on the mode/ operator used
+# Hint: use 3 separate inputs
+# Bonus: Extend functionality with extra mode so it also does celsius to fahrenheit conversion
+# formula is: temp in C*9/5 + 32 = temp in f
+
+mode = input('Enter maths operation(+, -, /, *, convert): ')
+num1 = float(input('Enter your first number: '))
+num2 = float(input('Enter your second number: '))
+
+if mode == '+':
+    print(f'{num1 + num2}')
+elif mode == '-':
+    print(f'{num1 - num2}')
+elif mode == '/':
+    print(f'{num1 / num2}')
+elif mode == '*':
+    print(f'{num1 * num2}')
+elif mode == 'convert':
+    print(f'{(num1 * 1.8) + 32}')    
+else:
+    print('Something is wrong, go fuck yaself.')
