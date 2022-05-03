@@ -503,13 +503,34 @@
 
 # The difference between explicit and reference-based copies is subtle, but can be really important. Try to keep in mind how a list is stored in the computer's memory.
 # Create list areas
-areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+# areas = [11.25, 18.0, 20.0, 10.75, 9.50]
 
-# Create areas_copy
-areas_copy = list(areas)
+# # Create areas_copy
+# areas_copy = list(areas)
 
-# Change areas_copy
-areas_copy[0] = 5.0
+# # Change areas_copy
+# areas_copy[0] = 5.0
 
-# Print areas
-print(areas)
+# # Print areas
+# print(areas)
+
+import numpy as np
+
+print(np.array([1, 2, 3, 4]))
+
+
+# Definition of radius
+r = 0.43
+
+# Import the math package
+import math
+
+# Calculate C
+C = 2*math.pi*r
+
+# Calculate A
+A = math.pi*r**2
+
+# Build printout
+print("Circumference: " + str(C))
+print("Area: " + str(A))
