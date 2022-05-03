@@ -1,3 +1,8 @@
+
+import numpy as np
+import math
+
+
 # print('Hello World')
 
 # Create appropriate Variables for Item name, the price
@@ -514,23 +519,59 @@
 # # Print areas
 # print(areas)
 
-import numpy as np
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  Packages
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-print(np.array([1, 2, 3, 4]))
 
 
-# Definition of radius
-r = 0.43
+# print(np.array([1, 2, 3, 4]))
 
-# Import the math package
-import math
 
-# Calculate C
-C = 2*math.pi*r
+# # Definition of radius
+# r = 0.43
 
-# Calculate A
-A = math.pi*r**2
+# # Import the math package
+
+
+# # Calculate C
+# C = 2*math.pi*r
+
+# # Calculate A
+# A = math.pi*r**2
 
 # Build printout
-print("Circumference: " + str(C))
-print("Area: " + str(A))
+# print("Circumference: " + str(C))
+# print("Area: " + str(A))
+
+# # Definition of radius
+# r = 192500
+
+# # Import radians function of math package
+# from math import radians
+
+# # Travel distance of Moon over 12 degrees. Store in dist.
+# dist = r * radians(12)
+
+# # Print out dist
+# print(dist)
+
+# print(117.934 / 1.8796000000000002 ** 2)
+# height_in and weight_lb are available as a regular lists
+
+# Import numpy
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DOESNT WORK CUS THE LISTS ARE FROM DATACAMP ONLINE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Calculate the BMI: bmi
+np_height_m = np.array(height_in) * 0.0254
+np_weight_kg = np.array(weight_lb) * 0.453592
+bmi = np_weight_kg / np_height_m ** 2
+
+# Create the light array
+light = np.array(bmi < 21)
+
+# Print out light
+print(light)
+
+# Print out BMIs of all baseball players whose BMI is below 21
+print(bmi[light])
