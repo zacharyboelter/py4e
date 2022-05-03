@@ -482,19 +482,34 @@
 
 
 
-freelancers = {'name':'freelancing Shop','brian': 70, 'black knight':20, 'biccus diccus':100, 'grim reaper':500, 'minstrel':-15}
-antiques = {'name':'Antique Shop','french castle':400, 'wooden grail':3, 'scythe':150, 'catapult':75, 'german joke':5}
-pet_shop = {'name':'Pet Shop','blue parrot':10, 'white rabbit':5, 'newt': 2}
+# freelancers = {'name':'freelancing Shop','brian': 70, 'black knight':20, 'biccus diccus':100, 'grim reaper':500, 'minstrel':-15}
+# antiques = {'name':'Antique Shop','french castle':400, 'wooden grail':3, 'scythe':150, 'catapult':75, 'german joke':5}
+# pet_shop = {'name':'Pet Shop','blue parrot':10, 'white rabbit':5, 'newt': 2}
 
-#create an dempty shopping cart
-cart = {}
-#loop through stores/dicts
+# #create an dempty shopping cart
+# cart = {}
+# #loop through stores/dicts
 
-for shop in  (freelancers, antiques, pet_shop) :
-    #inputbox  to show what you can buy...capture textstring of what was bought...make lowercase
-    buy_item = input(f'Welcome to {shop["name"]}! what do you want to buy: {shop}').lower()
-    #update the cart
-    cart.update({buy_item:shop.pop(buy_item)}) # use pop...
-    #set the string to variable to clean it up
-    buy_items = ", ".join(list(cart.keys()))
-print(f'You Purchased {buy_items} Today it is all free. Have a nice day of mayhem!')
+# for shop in  (freelancers, antiques, pet_shop) :
+#     #inputbox  to show what you can buy...capture textstring of what was bought...make lowercase
+#     buy_item = input(f'Welcome to {shop["name"]}! what do you want to buy: {shop}').lower()
+#     #update the cart
+#     cart.update({buy_item:shop.pop(buy_item)}) # use pop...
+#     #set the string to variable to clean it up
+#     buy_items = ", ".join(list(cart.keys()))
+# print(f'You Purchased {buy_items} Today it is all free. Have a nice day of mayhem!')
+
+
+
+# The difference between explicit and reference-based copies is subtle, but can be really important. Try to keep in mind how a list is stored in the computer's memory.
+# Create list areas
+areas = [11.25, 18.0, 20.0, 10.75, 9.50]
+
+# Create areas_copy
+areas_copy = list(areas)
+
+# Change areas_copy
+areas_copy[0] = 5.0
+
+# Print areas
+print(areas)
